@@ -64,7 +64,7 @@ body {
   padding: calc(var(--index) * 8) 0;
 }
 
-@media screen and (min-width: 560px) {
+@media screen and (max-width: 560px) {
   .gallery {
     flex-direction: column;
   }
