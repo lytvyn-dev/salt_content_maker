@@ -68,6 +68,10 @@ body {
   .gallery {
     flex-direction: column;
   }
+
+  .hero {
+    left: 0;
+  }
 }
 
 .gallery > * {
