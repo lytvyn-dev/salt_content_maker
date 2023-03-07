@@ -61,3 +61,16 @@ galleryRight.forEach((el) => {
     }
   );
 });
+
+const mediaQuery = window.matchMedia("(max-width: 560px)");
+
+function handleTabletChange(e) {
+  if (e.matches) {
+    const mainTitle = document.querySelector(".main-title");
+    mainTitle.setAttribute("data-speed", "1");
+    mainTitle.setAttribute("data-lag", ".7");
+  }
+}
+
+mediaQuery.addEventListener("change", handleTabletChange);
+handleTabletChange(mediaQuery);
